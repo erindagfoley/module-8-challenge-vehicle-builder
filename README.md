@@ -1,6 +1,6 @@
 # module-8-challenge-vehicle-builder
 
-##Description
+## Description
 This application stores vehicles and allows you to add new vehicles. It allows you to choose actions to perform on the vehicle, such as starting the vehicle, accelerating the vehicle, and other actions. The vehicles include cars, trucks, and motorbikes. 
 
 ## Table of Contents
