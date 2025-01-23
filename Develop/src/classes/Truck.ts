@@ -26,8 +26,6 @@ class Truck extends Vehicle implements AbleToTow {
     // TODO: The constructor should initialize the properties of the Truck class
     // TODO: The constructor should check if the wheels array has 4 elements and create 4 new default Wheel objects if it does not
     constructor(
-      started: boolean,
-      currentSpeed: number,
       vin: string,
       color: string,
       make: string,
@@ -57,11 +55,11 @@ class Truck extends Vehicle implements AbleToTow {
     // TODO: Check if the vehicle's weight is less than or equal to the truck's towing capacity
     // TODO: If it is, log that the vehicle is being towed
     // TODO: If it is not, log that the vehicle is too heavy to be towed
-    const ramTruck = new Truck (true, 55, thisismyvin, red, ram, 2021, 2000, 3000, [1, 2, 3, 4],)
-    if (this.weight <= this.towingCapacity) {
-      console.log('This vehicle is being towed');
+    const makeModelVehicle = vehicle.make && vehicle.model ? `${vehicle.make} ${vehicle.model}` : 'vehicle';
+    if (vehicle.weight < this.towingCapacity) {
+      console.log(`The ${vehicle.make} ${vehicle.model} is being towed`);
     } else {
-      console.log('This vehicle is too heavy to be towed');
+      console.log(`The ${vehicle.make} ${vehicle.model} is too heavy to be towed`);
     }
   }
 
@@ -69,12 +67,21 @@ class Truck extends Vehicle implements AbleToTow {
     // TODO: The method should call the printDetails method of the parent class
     // TODO: The method should log the details of the Truck
     // TODO: The details should include the VIN, make, model, year, weight, top speed, color, towing capacity, and wheels
-    override printDetails: void {
+    override printDetails (): void {
       super.printDetails();
-      return `${this.vin}, ${this.make}, ${this.model}, ${this.year}, ${this.weight}, ${this.topSpeed}, ${this.color}, ${this.towingCapacity}, ${this.wheels}`
+      console.log(
+        `VIN: ${this.vin}`, 
+        `make: ${this.make}`,
+        `model: ${this.model}`,
+        `year: ${this.year}`,
+        `weight: ${this.weight}`,
+        `top speed: ${this.topSpeed}`,
+        `color: ${this.color}`,
+        `towing capacity: ${this.towingCapacity}`,
+        `wheels: ${this.wheels}`,
+      )
     }
-    console.log(printDetails);
 }
-
 // Export the Truck class as the default export
 export default Truck;
+
