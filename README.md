@@ -8,7 +8,6 @@ This application stores vehicles and allows you to add new vehicles. It allows y
 - [Installation](#installation)
 - [Usage](#usage)
 - [Collaborators](#collaborators)
-- [Testing](#testing)
 - [Questions](#questions)
 
 ## Installation
