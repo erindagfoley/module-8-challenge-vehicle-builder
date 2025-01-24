@@ -30,4 +30,4 @@ This project was created by Erin Foley with starter code from edX bootcamps. Spe
 If you have any questions about this project, feel free to reach out:
 - GitHub: erindagfoley
 - Email: erindagfoley@gmail.com
-- You may view a tutorial on how to use this README generator at https://tinyurl.com/erin-foley-readme-tutorial 
+- You may view a tutorial on how to use this vehicle builder at https://tinyurl.com/foley-vehicle-builder
